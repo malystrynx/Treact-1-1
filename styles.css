@@ -149,3 +149,17 @@ padding-right: 128px;
     max-width: 720px;
     height: auto;
 }
+/* FEATURES */
+.section__title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.features__header h2{
+    font-size: 48px;
+    font-weight: 900;
+    padding:24px;
+    color:#243e63 ;
+}
