@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#navigation .container .row{
+    display: flex;
+}
+section{
+    display: block;
+}
+#navigation{
+    padding:2rem;
+}
+.purple{
+    color: rgb(100, 21, 255) ;
+}
+.container{
+    padding: 92px 0;
+}
+.row{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* NAV BAR */
+/* To do: Make sure there is a hover effect on it.*/
+/* Left Side */
+.logo img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo h1{
+    color: rgb(36,62,99);
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+/* Right Side */
+.nav__purple--border{
+background-color: rgb(36,62,99);
+padding: 12px 32px;
+border:20px
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+.nav li {
+    list-style-type: none;
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    padding: 24px;
+}
+.nav a{
+    text-decoration: none;
+    color: rgb(36,62,99);
+    font-size: 14px;
+}
+.nav__purple--border{
+    background-color: rgb(100, 21, 255);
+    padding: 12px 32px;
+    border-radius:20px;
+    }
+
+    .white{
+        color: #fff ;
+    }
+
+
+    /* Section 1  */
+.left-info h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.left-info p{
+    font-size: 18px;
+    margin: 28px 0;
+    font-weight: 400;
+}
+
+.email{
+    position: relative;
+    max-width: 450px;
+    display: flex;
+    align-items: center;
+}
+
+.input__email{
+padding: 22px 0;
+padding-left: 32px;
+width: 100%;
+border-radius: 100px;
+border:  2px solid #e5e7eb;
+font-size: 1rem;
+font-weight: 500;
+}
+
+.email__btn{
+    position: absolute;
+    right: 0;
+    margin: 8px 8px 8px 0;
+    padding: 14px 0;
+    width: 160px;
+    border-radius:6969px;
+    border: none;
+    background-color: rgb(100, 21, 255) ;
+    color: white;
+    font-weight: bold;
+    line-height: 1.5;
+}
+.left-info h2{
+    margin-top: 64px;
+    margin-bottom: 12px;
+    color:#A0AEC0;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.left-info img{
+opacity: 0.5;
+padding-right: 128px;
+}
+
+.container__img{
+    width: 60%;
+}
+
+.container__img img{
+    max-width: 720px;
+    height: auto;
+}
