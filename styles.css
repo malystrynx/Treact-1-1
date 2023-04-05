@@ -9,6 +9,9 @@
 #navigation .container .row{
     display: flex;
 }
+.container{
+    padding: 80px;
+}
 section{
     display: block;
 }
@@ -25,6 +28,25 @@ section{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+}
+h1 {
+    font-size: 48px;
+    color: #243363;
+}
+
+p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    color: #7C8BA1;
+    text-align: left;
+    max-width: 576px;
+    margin: 24px 0px 36px 0px;
+}
+
+.title{
+    color:#6415ff;
+    font-weight: 700;
 }
 /* NAV BAR */
 /* To do: Make sure there is a hover effect on it.*/
@@ -133,6 +155,7 @@ font-weight: 500;
     color: white;
     font-weight: bold;
     line-height: 1.5;
+    cursor: pointer;
 }
 .left-info h2{
     margin-top: 64px;
@@ -219,4 +242,53 @@ padding-right: 128px;
     font-weight: 500;
     line-height: 2;
     color: #7c8ba1;
+}
+/* Quality Work */
+#quality-work .row{
+    display: flex;
+}
+
+
+.quality{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.quality-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.quality-img{
+    max-width: 100%;
+    position: relative;
+
+}
+.quality-btn{
+    margin-top: 32px;
+    padding: 12px 18px;
+    width: 132px;
+    border-radius: 9999px;
+    border: none;
+    background-color: #6415ff;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    line-height: 1.5;
+    cursor: pointer;
+
+}
+
+/* STEPS */
+
+#steps .row{
+    display: flex;
+}
+
+.steps-text h2{
+    font-size: 3rem;
+    color: #243363;
 }
