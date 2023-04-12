@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Treact</title>
   <link rel="stylesheet" href="styles.css" />
-  <script src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+  <script src="https://kit.fontawesome.com/1256adce66.js" crossorigin="anonymous"></script>
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400&display=swap");
   </style>
@@ -16,29 +16,59 @@
     <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
       d="M12 1v22m5-18H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
   </svg>
+  <script src="./index.js"></script>
 </head>
 
 <body>
   <!-- NAV -->
   <section id="navigation">
+    <nav>
     <div class="row">
       <div class="nav">
         <div class="logo">
           <img src="./PICS/treact.png" alt="logo" />
           <h1>Treact</h1>
         </div>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Login</a></li>
+        <div class="navi">
+        <ul id="top__color">
+          <li><a class="nav__link" href="#">About</a></li>
+          <li><a class="nav__link" href="#">Blog</a></li>
+          <li><a class="nav__link" href="#">Pricing</a></li>
+          <li><a class="nav__link" href="#">Contact Us</a></li>
+          <li><a class="nav__link" href="#">Login</a></li>
           <li>
             <a href="#" class="nav__purple--border">
               <span class="white">Sign Up</span></a>
           </li>
         </ul>
       </div>
+      </div>
+      <button class="btn__menu" onclick="openMenu()">
+        <i class="fas fa-bars pos"></i>
+      </button>
+      <div class="menu__backdrop">
+        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+          <i class="fa-solid fa-xmark" style="color: #000000;"></i>
+        </button>
+        <ul class="menu__links">
+          <li class="menu__list">
+            <a href="#" class="menu__link">About</a>
+          </li>
+          <li class="menu__list">
+            <a href="#" class="menu__link">Blog</a>
+          </li>
+          <li class="menu__list">
+            <a href="#" class="menu__link">Pricing</a>
+          </li>
+          <li class="menu__list">
+            <a href="#" class="menu__link">Contact Us</a>
+          </li>
+          <li class="menu__list">
+            <a href="#" class="menu__link">Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     </div>
     <!-- First section -->
     <header>
@@ -314,9 +344,16 @@
           <h1 class="test__h1">Our Clients <span class="purple">Love Us.</span></h1>
           <p class="values__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.</p>
           <div class="review">
-            <div class="star"></div>
+            <div class="stars">
+              <i class="fa-solid fa-star star"></i>
+              <i class="fa-solid fa-star star"></i>
+              <i class="fa-solid fa-star star"></i>
+              <i class="fa-solid fa-star star"></i>
+              <i class="fa-solid fa-star star"></i>
+            </div>
             <h2 class="sub">Amazing User Exeprience</h2>
             <p class="test__para">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <div class="profile__jc">
             <div class="profile">
               <figure class="profile__img">
                 <img class="pic" src="./PICS/profile.avif" alt="">
@@ -326,13 +363,96 @@
                 <h2 class="profile__job">Director, Delos Inc</h2>
               </div>
             </div>
-            <div></div>
+            <div class="arrows">
+              <button class="arrow"><i class="fa-solid fa-arrow-left" style="color: #6415ff;"></i></button>
+              <div class="line"></div>
+              <button class="arrow"><i class="fa-solid fa-arrow-right" style="color: #6415e1;"></i></button>
+            </div>
+          </div>
           </div>
         </div>
       </div>
       </div>
     </div>
     
+  </section>
+  <section class="end">
+<div class="container">
+  <div class="row">
+    <div class="contact">
+      <div class="contact__row">
+      <h1 class="contact__text">Developers all over the world are happily using Treact.</h1>
+      <div class="contact__btns">
+        <button class="started__btn">Get Started</button>
+        <button class="contact__btn">Contact us</button>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+  </section>
+  <section class="footer__container">
+    <footer>
+    <div class="container">
+      <div class="footer">
+        <div class="row">
+          <div class="footer__links">
+            <div class="link__lists">
+              <h5 class="footer__sub">MAIN</h5>
+              <p class="link">Blog</p>
+              <p class="link">FAQS</p>
+              <p class="link">Support</p>
+              <p class="link">About Us</p>
+            </div>
+            <div class="link__lists">
+              <h5 class="footer__sub">PRODUCT</h5>
+              <p class="link">Log In</p>
+              <p class="link">Personal</p>
+              <p class="link">Business</p>
+              <p class="link">Team</p>
+            </div>
+            <div class="link__lists">
+              <h5 class="footer__sub">PRESS</h5>
+              <p class="link">Logos</p>
+              <p class="link">Events</p>
+              <p class="link">Stories</p>
+              <p class="link">Office</p>
+            </div>
+            <div class="link__lists">
+              <h5 class="footer__sub">TEAM</h5>
+              <p class="link">Career</p>
+              <p class="link">Founders</p>
+              <p class="link">Culture</p>
+              <p class="link">Onboarding</p>
+            </div>
+            <div class="link__lists">
+              <h5 class="footer__sub">LEGAL</h5>
+              <p class="link">GDPR</p>
+              <p class="link">Privacy Policy</p>
+              <p class="link">Terms of Service</p>
+              <p class="link">Disclaimer</p>
+            </div>
+          </div>
+            <div class="line"></div>
+            <div class="footer__info">
+              <div class="logo__bot">
+                <div class="logo__images">
+                <img class="logo__img" src="./PICS/treact white.svg" alt="">
+                <div class="name__white">Treact Inc.</div>
+              </div>
+              <p class="copyright">© 2018 Treact Inc. All Rights Reserved.</p>
+              <div class="socials">
+                <a class="social" href="facebook.com"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+                <a class="social" href="twitter.com"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                <a class="social" href="youtube.com"><i class="fa-brands fa-youtube fa-xl"></i></a>
+              </div>
+              </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   </section>
 </body>
 
