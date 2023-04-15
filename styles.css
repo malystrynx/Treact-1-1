@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 
+
 }
 html{
     scroll-behavior: smooth;
@@ -32,10 +33,11 @@ li, ul, a{
 }
 .btn__menu{
     background-color: transparent;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     border: none;
     color: #7342d6;
+    display: none;
 }
 .pos{
 display: flex;
@@ -60,7 +62,7 @@ display: flex;
     visibility: hidden;
     opacity: 0;
     transition: all 300ms ease;
-    transform: translateX(150%) translateY(0px);
+
     
 }
 .menu--open .menu__backdrop {
@@ -77,6 +79,9 @@ display: flex;
     color: white;
 }
 
+.navi{
+    display: flex;
+}
 .menu__links{
     display: flex;
     flex-direction: column;
@@ -133,12 +138,15 @@ h1 {
     margin: 24px 0px 36px 0px;
 }
 
-.title{
-    color:#6415ff;
-    font-weight: 700;
+.title {
+    font-weight: 900;
+    font-size: 48px;
+    color: #243363;
+    margin-top: 24px;
 }
+
 /* NAV BAR */
-/* To do: Make sure there is a hover effect on it.*/
+
 /* Left Side */
 .logo img{
     width: 40px;
@@ -261,12 +269,12 @@ padding-right: 128px;
 }
 
 .container__img{
-    width: 60%;
+    width: 100%;
 }
 
 .container__img img{
-    max-width: 720px;
-    height: auto;
+    width: 80%;
+    margin-left: 24px;
 }
 /* FEATURES */
 .section__title{
@@ -835,3 +843,101 @@ footer {
 }
 
 /* Media */
+@media (max-width: 1024px) {
+    .nav__link, .nav .btn  {
+        display: none;
+    }
+    
+    .btn__menu {
+        display: block;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subtext {
+        font-size: 16px;
+        line-height: 1.625;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .left-info{ 
+    width: 100%;
+    margin: 0 auto;
+    max-width: 512px;
+    text-align: center;
+}
+.container__img{
+    width: 100%;
+    max-width: 512px;
+    margin: 0 auto;
+    margin-top: 36px;
+
+}
+}
+
+    
+
+
+@media (max-width: 768px) {
+
+    .rowmedia {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .subtext {
+        text-align: center;
+        max-width: 448px;
+    }
+}
+
+@media (max-width: 640px) {
+    .title {
+        text-align: center;
+    }
+    .email__btn {
+        position: static;
+        width: 100%;
+        max-width: 410px;
+        padding: 20px;
+        display: block;
+    }
+
+    .profile__jc {
+        flex-direction: column;
+    }
+
+    .profile {
+        margin-bottom: 24px;
+    }
+
+    .link__lists {
+        width: calc(100% / 5);
+        text-align: center;
+        min-width: 125px;
+    }
+
+    .contact__btns {
+        flex-direction: column;
+    }
+
+    .started__btns {
+        margin: 0px 0px 16px 0px;
+    }
+
+    .values__size{
+        width: 50%;
+    }
+
+}

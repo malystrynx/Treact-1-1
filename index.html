@@ -36,16 +36,16 @@
           <li><a class="nav__link" href="#">Pricing</a></li>
           <li><a class="nav__link" href="#">Contact Us</a></li>
           <li><a class="nav__link" href="#">Login</a></li>
-          <li>
+          <li class="nav__link">
             <a href="#" class="nav__purple--border">
-              <span class="white">Sign Up</span></a>
+              <span class="btn">Sign Up</span></a>
           </li>
         </ul>
+        <button class="btn__menu" onclick="openMenu()">
+          <i class="fas fa-bars pos"></i>
+        </button>
       </div>
       </div>
-      <button class="btn__menu" onclick="openMenu()">
-        <i class="fas fa-bars pos"></i>
-      </button>
       <div class="menu__backdrop">
         <button class="btn__menu btn__menu--close" onclick="closeMenu()">
           <i class="fa-solid fa-xmark" style="color: #000000;"></i>
@@ -73,7 +73,7 @@
     <!-- First section -->
     <header>
       <div class="container">
-        <div class="row column1">
+        <div class="row column">
           <div class="left-info">
             <h1>
               Beautiful React Templates <span class="purple">for you.</span>
@@ -102,8 +102,8 @@
       <div class="row">
         <div class="features__header">
           <span class="section__title title">FEATURES</span>
-          <h2>We Have Amazing Service.</h2>
-          <p>
+          <h1 class="title">We Have Amazing <span class="purple">Service.</span></h1>
+          <p class="subtext">
             Lorem ipsum dolo sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
@@ -158,11 +158,11 @@
   <section id="quality-work">
     <div class="container">
       <div class="row">
-        <div class="quality">
+        <div class="quality rowmedia">
           <div class="quality-text">
             <span class="title">QUALITY WORK</span>
             <h1>Designed & Developed by <span class="purple">Professionals.</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sunt adipisci dolorem quasi, cupiditate
+            <p class="subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores sunt adipisci dolorem quasi, cupiditate
               deleniti modi amet veniam maxime exercitationem? Ad laudantium adipisci ullam beatae perspiciatis dolorem
               facere quas in.</p>
             <button class="quality-btn">Learn More</button>
@@ -216,11 +216,11 @@
   <section class="values">
     <div class="container">
       <div class="row">
-        <div class="values__container">
+        <div class="values__container rowmedia">
           <div class="values__text">
             <span class="title">VALUES</span>
             <h1 class="values__h1">We Always Abide By Our <span class="purple">Principles.</span></h1>
-            <p class="values__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus natus sapiente
+            <p class="values__p subtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus natus sapiente
               necessitatibus perferendis similique ipsam odio vero eos suscipit doloremque assumenda numquam minima,
               dolor voluptas totam error ea quam non.</p>
             <div class="options">
@@ -272,7 +272,7 @@
         <div class="pricing__title">
           <span class="title">PRICING</span>
           <h1 class="values__h1">Reasonable & Flexible <span class="purple">Plans.</span></h1>
-          <p class="values__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          <p class="values__p subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
             ut labore et dolore magna aliqua.</p>
         </div>
         <div class="three__plans">
@@ -343,7 +343,7 @@
         <div class="testimonial__para">
           <span class="title">TESTIMONIALS</span>
           <h1 class="test__h1">Our Clients <span class="purple">Love Us.</span></h1>
-          <p class="values__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.</p>
+          <p class="values__p subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.</p>
           <div class="review">
             <div class="stars">
               <i class="fa-solid fa-star star"></i>
