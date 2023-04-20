@@ -5,6 +5,10 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
+.hide {
+  display: none;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -89,8 +93,7 @@ a {
 .menu__link {
   color: black;
 }
-#top__color {
-}
+
 
 #top__color a:hover {
   color: #6415ff;
@@ -127,7 +130,7 @@ h1 {
   color: #243363;
 }
 
-.service__list p {
+.service__para {
   font-weight: 500;
   font-size: 18px;
   line-height: 32px;
@@ -331,12 +334,7 @@ h1 {
   color: var(--color-font);
 }
 
-.service p {
-  margin-top: 18px;
-  font-weight: 500;
-  line-height: 2;
-  color: #7c8ba1;
-}
+
 /* Quality Work */
 #quality-work .row {
   display: flex;
@@ -375,6 +373,7 @@ h1 {
 
 #steps .row {
   display: flex;
+  flex-direction: column;
 }
 
 .steps__title {
@@ -494,12 +493,13 @@ h1 {
 .three__plans {
   display: flex;
   justify-content: space-around;
+
 }
 
 .plans {
   display: flex;
   flex-direction: column;
-  width: calc(100% / 3);
+  width: 100%;
   border: 1px solid #e5e7eb;
   border-radius: 10px;
   text-align: center;
@@ -700,6 +700,7 @@ h1 {
 
 .arrows {
   display: flex;
+  align-items: center;
 }
 .line {
   border-left: 1px solid rgb(226, 232, 240);
@@ -714,6 +715,7 @@ h1 {
   margin: 8px 12px;
   transition: all ease 0.3s;
   background-color: rgb(237 242 247);
+  height: 42px;
 }
 /* Ending */
 .contact {
@@ -737,7 +739,7 @@ h1 {
 .started__btn {
   background-color: rgb(245 101 101);
   padding: 20px 40px;
-  margin: 0px 32px 0px 0px;
+  margin-right: 32px;
   border-radius: 50px;
   color: white;
   font-size: 16px;
@@ -750,6 +752,7 @@ h1 {
 .contact__btn {
   background-color: #6415ff;
   padding: 20px 40px;
+  
   border-radius: 50px;
   color: white;
   font-size: 16px;
@@ -793,7 +796,8 @@ footer {
 }
 .footer__sub {
   font-size: 16px;
-  margin-bottom: 24px;
+  text-decoration: underline;
+
 }
 .link {
   margin-top: 16px;
@@ -856,6 +860,10 @@ footer {
   .nav .btn {
     display: none;
   }
+
+  .values__img {
+    display: flex;
+  }
   .landing__h1 {
     font-size: 30px;
     text-align: center;
@@ -864,12 +872,11 @@ footer {
     display: block;
   }
   .service {
-
     display: flex;
-
   }
   .container {
-    padding: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   .column {
@@ -879,6 +886,7 @@ footer {
   }
 
   .subtext {
+    text-align: center;
     font-size: 16px;
     line-height: 1.625;
   }
@@ -905,7 +913,6 @@ footer {
     margin: 0 auto;
     margin-top: 36px;
   }
-
 }
 
 @media (max-width: 768px) {
@@ -913,9 +920,15 @@ footer {
     display: flex;
     flex-direction: column-reverse;
   }
+  .steps__h2 {
+    text-align: center;
+  }
 
   .subtext {
-    text-align: center;
+    margin-left: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
   }
   .quality-text {
     display: flex;
@@ -958,6 +971,55 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+  .values__img {
+    display: flex;
+    justify-content: center;
+  }
+  .values__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+  }
+  .option__top {
+    justify-content: center;
+  }
+  .desktop-show {
+    display: initial;
+}
+  .test__h1 {
+    font-size: 38px;
+    text-align: center;
+  }
+  .test__adj{
+    flex-direction: column;
+  }
+  .test__img{
+    width: 100%;
+    max-width: 448px;
+  }
+  .testimonial__img {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  }
+  .testimonial__para{
+    text-align: center;
+  }
+
+  .contact__text{
+    font-size: 18px;
+  }
+  .contact__row{
+    flex-direction: column;
+  }
+  .contact__btns{
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 640px) {
@@ -967,7 +1029,6 @@ footer {
   .email__btn {
     position: static;
     width: 100%;
-    max-width: 410px;
     padding: 20px;
     display: block;
   }
@@ -979,8 +1040,6 @@ footer {
   .profile {
     margin-bottom: 24px;
   }
-
-}
   .link__lists {
     width: calc(100% / 5);
     text-align: center;
@@ -988,27 +1047,87 @@ footer {
   }
 
   .contact__btns {
-    flex-direction: column;
+    display: flex;
   }
 
   .started__btns {
     margin: 0px 0px 16px 0px;
   }
+  .desktop-show1 {
+    display: initial;
+}
+.contact__text{
+  text-align: center;
+  padding-bottom: 28px;
+}
+.footer__links{
+justify-content: center;
+  column-gap: 50px;
+}
+.service{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service__title{
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+.service__para{
+font-size: 14px;
+}
+.email{
+  display: block;
+width: 100%;
 
-  .values__size {
-    width: 50%;
-  }
-  
+}
+.left-info{
+  display: flex;
+  align-items: center;
+}
+.customer__img{
+  width: 100%;
+}
 }
 
 @media (max-width: 360px) {
-  #top__color {
-    display: none;
-  }
+.menu__backdrop{
+  width: 425px;
+}
 
-  .service {
-    display: flex;
-    width: 100%;
-    padding: 32px 8px;
-  }
+.btn__menu{
+  font-size: 28px;
+
+}
+.options{
+  flex-wrap: wrap;
+}
+.three__plans{
+  flex-wrap: wrap;
+}
+.values__size{
+  max-width: 300px;
+}
+.contact__btns{
+  flex-wrap: wrap;
+  width: 200px;
+
+
+}
+.started__btn{
+  margin: 0;
+  max-height: 45px;
+  font-size: 16px;
+}
+.contact__btn{
+  margin-top: 16px;
+  max-height: 45px;
+  font-size: 16px;
+
+}
+
+.footer__container{
+  padding: 0;
+}
 }
