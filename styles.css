@@ -1130,4 +1130,13 @@ width: 100%;
 .footer__container{
   padding: 0;
 }
+
+.contact__text{
+  text-align: center;
+    width: 100%;
+    max-width: 512px;
+}
+.contact{
+  padding: 50px;
+}
 }
