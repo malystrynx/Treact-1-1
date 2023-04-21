@@ -856,8 +856,7 @@ footer {
 
 /* Media */
 @media (max-width: 1024px) {
-  .nav__link,
-  .nav .btn {
+  .nav__link, .nav .btn, .top__color {
     display: none;
   }
 
