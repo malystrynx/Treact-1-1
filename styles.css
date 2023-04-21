@@ -106,7 +106,7 @@ a {
   display: flex;
 }
 .container {
-  padding: 80px;
+  padding: 30px;
 }
 section {
   display: block;
@@ -117,9 +117,7 @@ section {
 .purple {
   color: rgb(100, 21, 255);
 }
-.container {
-  padding: 92px 0;
-}
+
 .row {
   width: 100%;
   max-width: 1200px;
@@ -777,7 +775,7 @@ footer {
   padding-top: 96px;
 }
 .container {
-  padding: 96px 0;
+  padding: 60px 0;
 }
 .footer {
   margin: 0 32px;
@@ -857,7 +855,7 @@ footer {
 /* Media */
 @media (max-width: 1024px) {
   .nav__link, .nav .btn, .top__color {
-    display: none;
+    display: none !important;
   }
 
   .values__img {
@@ -1022,6 +1020,7 @@ footer {
 }
 
 @media (max-width: 640px) {
+
   .title {
     text-align: center;
   }
@@ -1090,11 +1089,31 @@ width: 100%;
 }
 }
 
-@media (max-width: 360px) {
-.menu__backdrop{
-  width: 425px;
-}
 
+
+@media (max-width: 360px) {
+  .menu__backdrop {
+    width: 100%;
+    max-width: 340px;
+  }
+.service__list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.landing__h1{
+  font-size: 20px;
+}
+.landing__p{
+  font-size: 14px;
+}
+.service{
+  width: 100%;
+  max-width: 250px;
+}
+.service__description,.service__para{
+  text-align: center;
+}
 .btn__menu{
   font-size: 28px;
 
@@ -1111,18 +1130,16 @@ width: 100%;
 .contact__btns{
   flex-wrap: wrap;
   width: 200px;
-
-
 }
+
 .started__btn{
   margin: 0;
-  max-height: 45px;
-  font-size: 16px;
+
 }
 .contact__btn{
   margin-top: 16px;
-  max-height: 45px;
-  font-size: 16px;
+  
+
 
 }
 
@@ -1137,5 +1154,24 @@ width: 100%;
 }
 .contact{
   padding: 50px;
+}
+.quality-img{
+  width: 100%;
+  max-width: 2000px;
+}
+.input__email{
+padding: 10px;
+}
+.email__btn{
+  padding: 10px;
+}
+.container{
+  margin-bottom: -50px;
+
+}
+
+.footer__links{
+ gap: 40px;
+  
 }
 }
